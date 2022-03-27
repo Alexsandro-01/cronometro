@@ -1,0 +1,73 @@
+.sect-stopwatch {
+  /* border: solid 1px; */
+  width: 720px;
+  height: 500px;
+  min-width: 450px;
+  min-height: 450px;
+  border-top: 8px solid #01a1d6;
+  box-shadow: 0px 0px 5px #999;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outside {
+  background-color: #003842;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inside {
+  width: 360px;
+  height: 360px;
+  border: solid 10px #01a1d6;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stopwatch-content {
+  /* border: solid 1px blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stopwatch-content div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  font-size: 1.5em;
+  color: #01a1d6;
+  
+}
+
+.stopwatch-content div input {
+  width: 25%;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0 5px;
+  border: none;
+  border-bottom: solid 2px #01a1d6;
+  background-color: #003842;
+  color: aliceblue;
+  outline: none;
+}
+
+.stopwatch-content button {
+  margin-top: 20px;
+  background-color: #01a1d6;
+  border: none;
+  color: aliceblue;
+  padding: 15px 30px;
+  cursor: pointer;
+}

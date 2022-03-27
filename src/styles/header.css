@@ -1,0 +1,38 @@
+header {
+  background-color: #01a1d6;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  padding: 15px;
+  font-size: 2.5em;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+ul li {
+  padding: 5px 10px;
+}
+
+
+li:nth-child(1) {
+  background-color: #01a1d6;
+}
+
+li:nth-child(2) {
+  background-color: #fea418;
+}
+
+li:nth-child(3) {
+  background-color: #01ae40;
+}
+
+li:nth-child(4) {
+  background-color: #dd0101;
+}
