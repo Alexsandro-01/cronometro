@@ -1,9 +1,10 @@
 .App {
-  background-color: #ebebeb;
+  background-color: #dfdede;
   min-width: 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 main {
@@ -11,14 +12,18 @@ main {
   flex-grow: 4;
   display: flex;
   justify-content: center;
-  align-items: center;
-  border: solid;
+  align-items: flex-start;
   height: auto;
 }
 
 .btn {
   padding: 5px 15px;
   font-weight: 700;
-  /* border: none; */
   border-radius: 5px;
+  background-color: #01a1d6;
+}
+
+.btn:disabled {
+  background-color: grey;
+  cursor: not-allowed;
 }

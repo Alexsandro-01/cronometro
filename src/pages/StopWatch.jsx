@@ -25,26 +25,18 @@ class StopWatch extends Component {
     })
   }
 
-  start = () => {
+  handleItsTime = () => {
+    this.setState({
+      itsTime: true,
+    })
+  }
 
-    const myInterval = setInterval(() => {
-      const { mm, ss } = this.state;
-      this.setState({
-        mm: ss > 1 ? mm : mm - 1,
-        ss: ss > 1 ? ss - 1 : 59,
-        itsTime: true,
-      }, () => {
-        const { mm } = this.state;
-        if (mm < 0) {
-          clearInterval(myInterval);
-          this.setState({
-            mm: '',
-            ss: '',
-            itsTime: false,
-          })
-        }
-      })
-      }, 1000);
+  reset = () => {
+    this.setState({
+      mm: '',
+      ss: '',
+      itsTime: false,
+    })
   }
 
   form = () => {
@@ -60,7 +52,7 @@ class StopWatch extends Component {
         </div>
         <button
           className="btn"
-          onClick={() => this.start()}
+          onClick={() => this.handleItsTime()}
           disabled={ mm === '' && ss === ''}
         >
           Iniciar
@@ -78,7 +70,7 @@ class StopWatch extends Component {
           <div className="inside">
             {/* <Form mm={ mm } ss={ ss } /> */}
             {
-              itsTime ? <Timer mm={ mm } ss={ ss } />
+              itsTime ? <Timer mm={ mm } ss={ ss } funcReset={ this.reset }/>
                 : this.form()
             }
           </div>

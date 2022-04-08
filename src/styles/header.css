@@ -1,14 +1,20 @@
 header {
-  background-color: #01a1d6;
+  /* background-color: #01a1d6; */
+  box-shadow: 0 0 5px #999;
   color: aliceblue;
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 500px;
+  margin: 20px 0;
+  border-radius: 5px;
+  border-bottom: #01a1d6 solid 5px;
 }
 
 header h1 {
   padding: 15px;
   font-size: 2.5em;
+  color: #01a1d6;
 }
 
 header nav ul {
@@ -22,17 +28,17 @@ ul li {
 
 
 li:nth-child(1) {
-  background-color: #01a1d6;
+  color: #01a1d6;
 }
 
 li:nth-child(2) {
-  background-color: #fea418;
+  color: #fea418;
 }
 
 li:nth-child(3) {
-  background-color: #01ae40;
+  color: #01ae40;
 }
 
 li:nth-child(4) {
-  background-color: #dd0101;
+  color: #dd0101;
 }

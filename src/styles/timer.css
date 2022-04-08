@@ -1,4 +1,41 @@
+.timer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.timer div:first-child {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.timer .btn-pause-resume {
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 p {
-  font-size: 3em;
+  font-size: 4em;
   color: aliceblue;
+  text-align: center;
+}
+
+.timer .btn {
+  border: none;
+  background-color: transparent;
+  font-size: 1.5em;
+  color: #02c8f0;
+}
+
+.timer .btn:first-child {
+}
+
+.timer .btn:last-child {
+  background-color: transparent;
+  margin-left: 8px;
 }
