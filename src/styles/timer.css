@@ -32,6 +32,10 @@ p {
   color: #02c8f0;
 }
 
+.timer .btn {
+  cursor: pointer;
+}
+
 .timer .btn:first-child {
 }
 
